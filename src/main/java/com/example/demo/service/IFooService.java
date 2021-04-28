@@ -19,7 +19,7 @@ public interface IFooService {
 @Service
 class FooServiceImpl implements IFooService{
 
-    private IFooRepository fooRepository;
+    private final IFooRepository fooRepository;
 
     public FooServiceImpl(IFooRepository fooRepository) {
         this.fooRepository = fooRepository;
